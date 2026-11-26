@@ -1,0 +1,44 @@
+{
+  "name": "@qubiform/utils",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "cov": "vitest run --coverage",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean"
+  },
+  "peerDependencies": {
+    "ms": "^2.1.3"
+  },
+  "devDependencies": {
+    "@types/clone": "^2.1.4",
+    "@types/html-to-text": "^9.0.4",
+    "@types/ms": "^2.1.0",
+    "@types/node": "^26.6.6",
+    "@types/object-path": "^0.11.4",
+    "@types/qs": "^6.15.1",
+    "@types/validator": "^13.15.10",
+    "rimraf": "^6.1.4",
+    "tsup": "^9.0.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  },
+  "dependencies": {
+    "@apollo/client": "^4.3.8",
+    "clone": "^2.1.2",
+    "fast-equals": "^6.4.1",
+    "html-to-text": "^10.0.1",
+    "nanoid": "^6.0.2",
+    "object-path": "^0.11.8",
+    "qs": "^6.17.1",
+    "validator": "^13.15.35"
+  }
+}
